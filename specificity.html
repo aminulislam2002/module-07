@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        #third{
+            color: blue;
+        }
+        .fire{
+            color: black;
+        }
+        h1{
+            color: peru !important;
+            color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>My specificity heading 1</h1>
+    <h1>My specificity heading 2</h1>
+    <h1 style="color: crimson;" class="fire" id="third">My specificity heading 3</h1>
+    <h1>My specificity heading 4</h1>
+</body>
+</html>
